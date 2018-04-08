@@ -1,2 +1,2 @@
 # CovPoolFER
-Covariance Pooling for Facial Expression Recognition
+Covariance Pooling for Facial Expression Recognition (Coming Soon ...)

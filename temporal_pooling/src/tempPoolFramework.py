@@ -22,6 +22,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# this code is largely based on facenet above
+# modified by d-acharya
+
 # pylint: disable=missing-docstring
 from __future__ import absolute_import
 from __future__ import division

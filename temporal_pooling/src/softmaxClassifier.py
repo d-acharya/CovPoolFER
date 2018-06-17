@@ -1,5 +1,3 @@
-"""An example of how to use your own dataset to train a classifier that recognizes people.
-"""
 # MIT License
 # 
 # Copyright (c) 2016 David Sandberg
@@ -21,6 +19,9 @@
 # LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
+
+# this code is largely based on framework of facenet.
+# modified by d-acharya
 
 from __future__ import absolute_import
 from __future__ import division

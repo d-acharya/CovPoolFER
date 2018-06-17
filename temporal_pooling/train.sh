@@ -1,0 +1,1 @@
+python src/tempPoolTrain.py --data_dir 'afew_features/Train' --logs_base_dir 'logs/' --models_base_dir 'models/' --max_nrof_epochs 300 --optimizer ADAM --learning_rate -1 --learning_rate_schedule_file 'resources/learning_rate.txt' --center_loss_factor 1e-2 --center_loss_alfa 0.9 --epoch_size 24 --batch_size 31 --weight_decay 5e-2

@@ -1,0 +1,4 @@
+model_checkpoint_path: "/home/dinesh/home2/comparision/models/20180618-004944/model-20180618-004944.ckpt-7200"
+all_model_checkpoint_paths: "/home/dinesh/home2/comparision/models/20180618-004944/model-20180618-004944.ckpt-7152"
+all_model_checkpoint_paths: "/home/dinesh/home2/comparision/models/20180618-004944/model-20180618-004944.ckpt-7176"
+all_model_checkpoint_paths: "/home/dinesh/home2/comparision/models/20180618-004944/model-20180618-004944.ckpt-7200"

@@ -1,7 +1,7 @@
 # CovPoolFER
 
 There are two parts:
-* Pooling Temporal Features
+* Temporal Pooling of Features
 * Covariance Pooling of Convolution Features (to be added soon)
 
 #### Pooling Temporal Features:

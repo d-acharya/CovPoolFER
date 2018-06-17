@@ -1,5 +1,3 @@
-"""Functions for building the face recognition network.
-"""
 # MIT License
 # 
 # Copyright (c) 2016 David Sandberg

@@ -90,7 +90,7 @@ def _cal_gaussian_pooling(features):
     trace_t = tf.trace(features_t)
     trace_t = tf.reshape(trace_t, [shape_f[0], 1])
     trace_t = tf.tile(trace_t, [1, shape_f[2]])
-    trace_t = 1e-2*tf.matrix_diag(trace_t)
+    trace_t = 0.001*tf.matrix_diag(trace_t)
     return tf.add(features_t,trace_t)
 '''
 

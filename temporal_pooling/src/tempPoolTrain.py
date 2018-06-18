@@ -100,7 +100,7 @@ def main(args):
 		print('Total number of examples: %d' % len(vid_list))
         
 		print('Building training graph')
-		prelogits = tempPoolNetwork.inference(video_batch, phase_train=phase_train_placeholder, weight_decay=args.weight_decay)
+		prelogits = tempPoolNetwork.inference(video_batch, phase_train=phase_train_placeholder, weight_decay=args.weight_decay, batch_size=args.batch_size)
 		logits = slim.fully_connected(prelogits, len(train_set), activation_fn=None,
                 weights_initializer=tf.truncated_normal_initializer(stddev=0.1),
                 weights_regularizer=slim.l2_regularizer(args.weight_decay),

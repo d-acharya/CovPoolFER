@@ -5,7 +5,7 @@ from __future__ import print_function
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 
-def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0):
+def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0, batch_size):
     batch_norm_params={
         'decay':0.995,
         'epsilon':0.001,
@@ -17,9 +17,9 @@ def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0):
         weights_regularizer=slim.l2_regularizer(weight_decay),
         normalizer_fn=slim.batch_norm,
         normalizer_params=batch_norm_params):
-        return temporal_pool(cov_matrices, is_training=phase_train)
+        return temporal_pool(cov_matrices, is_training=phase_train,batch_size)
 
-def temporal_pool(inputs, is_training=True, reuse=None, scope='TemporalPool'):
+def temporal_pool(inputs, is_training=True, reuse=None, scope='TemporalPool',batch_size):
     #dropout_keep_prob=1
     with tf.variable_scope(scope,'TemporalPool',[inputs],reuse=reuse):
       with slim.arg_scope([slim.batch_norm,slim.dropout],is_training=is_training):
@@ -49,7 +49,7 @@ def temporal_pool(inputs, is_training=True, reuse=None, scope='TemporalPool'):
             local13 = _cal_log_cov(local14)
         # The batch size 31 here corresponds to batch size and
         # had to be hard coded while flattening the matrix
-        net = tf.reshape(local13,[31,-1])
+        net = tf.reshape(local13,[batch_size,-1])
         net = slim.fully_connected(net,32, activation_fn=None, scope='Bottleneck', reuse=False)
     return net
 

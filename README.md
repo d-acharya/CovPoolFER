@@ -1,9 +1,9 @@
 # CovPoolFER
 
 There are three main parts:
-* Covariance Pooling of Convolution Features (to be added soon)
+* Covariance Pooling of Convolution Features (to be added soon ...)
 * Temporal Pooling of Features (complete)
-* End to end training on videos (to be added soon)
+* End to end training on videos (to be added soon ...)
 
 
 #### Pooling Temporal Features:

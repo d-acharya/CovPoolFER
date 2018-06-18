@@ -19,3 +19,4 @@ Features extracted with CNN from AFEW dataset are placed in zip afew_features.zi
 * Apply the patch suggested in tensorflow_patch.txt file.
 * I got some queries regarding accuracy of RAF-DB. The accuracy reported is total accuracy and authors report average of per-class accuracy. These are two different measures.
 
+

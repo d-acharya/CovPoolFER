@@ -7,7 +7,7 @@ There are three main parts:
 
 
 #### Pooling Temporal Features:
-Features extracted with CNN from AFEW dataset are placed in zip afew_features.zip. Extract the zip to afew_features in same folder. To classify result, simple run bash classify.sh
+Features extracted with CNN (model proposed in the paper) from AFEW dataset are placed in zip afew_features.zip. Extract the zip to afew_features in same folder. To classify result, simple run bash classify.sh
 
 #### Requirements
 * python 2.7

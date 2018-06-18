@@ -17,6 +17,6 @@ Features extracted with CNN from AFEW dataset are placed in zip afew_features.zi
 #### Some Notes:
 * This code framework is mostly based on [facenet](https://github.com/davidsandberg/facenet)
 * Apply the patch suggested in tensorflow_patch.txt file.
-* I got some queries regarding accuracy of RAF-DB. The accuracy reported is total accuracy and authors report average of per-class accuracy. These are two different measures.
+* I got some queries regarding accuracy of RAF-DB. The accuracy reported is total accuracy and authors report "average of per-class accuracy" in their original paper. These are two different measures.
 
 

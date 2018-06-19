@@ -1,9 +1,9 @@
 # CovPoolFER
 
 There are following main parts:
-* Covariance Pooling of Convolution Features (partial code is added (models to be added eventually ...))
+* Covariance Pooling of Convolution Features (training and classification code is added (models to be added eventually ...))
 * Temporal Pooling of Features (complete)
-* Utilities for aligning SFEW
+* Utilities for aligning SFEW (to be added ...)
 
 #### Pooling Convolution Features
 Training and evaluation code is added. Pre-trained model to be added soon.

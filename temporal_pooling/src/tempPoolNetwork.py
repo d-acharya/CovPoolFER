@@ -5,7 +5,7 @@ from __future__ import print_function
 import tensorflow as tf
 import tensorflow.contrib.slim as slim
 
-def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0, batch_size):
+def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0, batch_size=31):
     batch_norm_params={
         'decay':0.995,
         'epsilon':0.001,
@@ -17,9 +17,9 @@ def inference(cov_matrices, phase_train=True, reuse=None, weight_decay=0.0, batc
         weights_regularizer=slim.l2_regularizer(weight_decay),
         normalizer_fn=slim.batch_norm,
         normalizer_params=batch_norm_params):
-        return temporal_pool(cov_matrices, is_training=phase_train,batch_size)
+        return temporal_pool(cov_matrices, is_training=phase_train,batch_size=batch_size)
 
-def temporal_pool(inputs, is_training=True, reuse=None, scope='TemporalPool',batch_size):
+def temporal_pool(inputs, is_training=True, reuse=None, scope='TemporalPool',batch_size=31):
     #dropout_keep_prob=1
     with tf.variable_scope(scope,'TemporalPool',[inputs],reuse=reuse):
       with slim.arg_scope([slim.batch_norm,slim.dropout],is_training=is_training):

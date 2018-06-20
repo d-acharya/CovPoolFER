@@ -6,8 +6,8 @@ There are following main parts:
 * Utilities for aligning SFEW (to be added ...)
 
 #### Pooling Convolution Features
-Training and evaluation code is added. Pre-trained model to be added soon.
-[models](https://www.dropbox.com/sh/viiaeryi4nve00b/AACfZjIdpiyFYwOyUf6YskNsa?dl=0)
+* Training and evaluation code is added. Pre-trained model to be added soon.
+* [models](https://www.dropbox.com/sh/viiaeryi4nve00b/AACfZjIdpiyFYwOyUf6YskNsa?dl=0)
 
 #### Pooling Temporal Features:
 Features extracted with CNN (model proposed in the paper) from AFEW dataset are placed in zip afew_features.zip. Extract the zip to afew_features in same folder. To classify result, simple run bash classify.sh

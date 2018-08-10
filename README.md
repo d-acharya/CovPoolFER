@@ -5,7 +5,9 @@ There are following main parts:
 * Temporal Pooling of Features
 
 #### Pooling Convolution Features
+You can download following models (2.5 GB total)
 * [models](https://drive.google.com/open?id=1SmFPoX3ASqUXbvtOYFGJnMzr9PhHHjZq)
+and run reproducepaper.sh (after uncommenting appropriate lines)
 
 #### Pooling Temporal Features:
 Features extracted with CNN (model proposed in the paper) from AFEW dataset are placed in zip afew_features.zip. Extract the zip to afew_features in same folder. To classify result, simple run bash classify.sh

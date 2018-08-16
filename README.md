@@ -18,6 +18,7 @@ Features extracted with CNN (model proposed in the paper) from AFEW dataset are 
 * python 2.7
 * tensorflow
 * numpy
+* sklearn
 
 #### Some Notes:
 * This code framework is mostly based on [facenet](https://github.com/davidsandberg/facenet)

@@ -22,4 +22,4 @@ Features extracted with CNN (model proposed in the paper) from AFEW dataset are 
 
 #### Some Notes:
 * This code framework is mostly based on [facenet](https://github.com/davidsandberg/facenet)
-* Apply the patch suggested in tensorflow_patch.txt file. While computing gradient of eigen-decomposition, NaNs are returned and training/inference throws errors. As suggested in file, add two lines to replace NaNs with zeros.
+* Apply the patch suggested in tensorflow_patch.txt file. While computing gradient of eigen-decomposition, NaNs are returned by tensorflow when eigenvalues are identical. This throws error and cannot continue training. The patch only replaces NANs with zeros. This makes training easier.

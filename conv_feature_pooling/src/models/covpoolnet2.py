@@ -19,7 +19,7 @@ def inference(images, keep_probability, phase_train=True, bottleneck_layer_size=
         normalizer_params=batch_norm_params):
         return dlp_cnn(images, is_training=phase_train,dropout_keep_prob=keep_probability,bottleneck_layer_size=bottleneck_layer_size)
 
-def network2(inputs,is_training=True,dropout_keep_prob=1,bottleneck_layer_size=7,reuse=None, scope='CovPool2'):
+def network(inputs,is_training=True,dropout_keep_prob=1,bottleneck_layer_size=7,reuse=None, scope='CovPool2'):
     #dropout_keep_prob=1
     with tf.variable_scope(scope,'CovPool2',[inputs],reuse=reuse):
         with slim.arg_scope([slim.batch_norm,slim.dropout],is_training=is_training):

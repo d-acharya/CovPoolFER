@@ -4,6 +4,9 @@ There are following main parts:
 * Covariance Pooling of Convolution Features
 * Temporal Pooling of Features
 
+## Note
+For pooling Convolution Features, I do not have exact hyperparameters to reproduce exact numbers in the paper. I at least obtained 86% with model1 (covpoolnet2.py and train2.sh). However, I have uploaded all the pretrained models from the paper.
+
 #### Pooling Convolution Features
 You can download following models (2.5 GB total)
 * [models](https://drive.google.com/open?id=1SmFPoX3ASqUXbvtOYFGJnMzr9PhHHjZq)
